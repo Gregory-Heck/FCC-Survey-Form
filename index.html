@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="styles" href="styles.css">
+    </head>
+    
+
+    <header>
+        <h1 id="title">
+            <strong>Formulario de Intereses</strong>
+        </h1>
+        <p id="description">
+            Que tipo de <em>Newsletter</em> você gostaria de receber?
+        </p>
+    </header>
+
+    <body>
+        <form id="survey-form">
+            <label id="name-label" for="name">Nome:<br></label>
+            <input id="name" type="text" placeholder="Digite seu nome" required><br><br>
+
+            <label id="number-label" for="age">Idade (opcional):<br></label>
+            <input id="number" type="number" min="1" step="1" max="150" placeholder="Digite a sua idade"><br><br>
+
+            <label id="email-label" for="email">E-mail:<br></label>
+            <input id="email" type="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <label id="dropdown-label" for="dropdown ">Frequência ideal:<br></label>
+            <select id="dropdown">
+                <option value="" disabled selected>Informe a frequêcia de recebimento da <em>Newsletter</em></option>
+                <option value="bimestral">Uma vez a cada dois meses</option>
+                <option value="mensal">Uma vez por mês</option>
+                <option value="semanal">Uma vez por semana</option>
+                <option value="bisemanal">Duas vezes por semana</option>
+            </select><br><br>
+
+            <label id="recomendante-label" for="recomendante">Você recomendaria uma <em>Newsletter</em> para um amigo?<br></label>
+            <section id="recomendante">
+                <label for="definiely">
+                    <input id="definitely" type="radio" name="recomendante" value="definitely">Definitivamente
+                </label><br>
+                <label for="maybe">
+                    <input id="maybe" type="radio" name="recomendante" value="maybe">Talvez
+                </label><br>
+                <label for="uncertain">
+                    <input id="uncertain" type="radio" name="recomendante" value="uncertain">Não tenho certeza
+                </label><br>
+            </section><br>
+
+            <label id="content-label" for="content">Que tipo de <em>Newsletter</em> você tem interesse?<br></label>
+            <section id="content">
+                <label for="sports">
+                    <input id="sports" type="checkbox" name="content" value="sports">Esportes
+                </label><br>
+                <label for="esports">
+                    <input id="esports" type="checkbox" name="content" value="esports">eSports
+                </label><br>
+                <label for="science">
+                    <input id="science" type="checkbox" name="content" value="science">Ciência
+                </label><br>
+                <label for="technology">
+                    <input id="technology" type="checkbox" name="content" value="technology">Tecnologia
+                </label><br>
+                <label for="art">
+                    <input id="art" type="checkbox" name="content" value="art">Arte
+                </label><br>
+                <label for="news">
+                    <input id="news" type="checkbox" name="content" value="news">Noticias
+                </label><br>
+            </section><br>
+
+            <label id="comments-label" for="comments">Comentários e sugestões:<br></label>
+            <textarea id="comments" rows="10" cols="40">Digite seus comentários e sugestões...</textarea><br><br>
+
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
