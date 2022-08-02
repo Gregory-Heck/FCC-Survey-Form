@@ -1,0 +1,28 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+}
+
+header{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+
+h1{
+    font-weight: bolder;
+
+    padding: 10px 0% 10px 0%;
+    margin: 0%;
+    background-color: #CCCCCC10;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color:#000;
+}
+
+h2{
+    font-weight: lighter;
+    margin: 0%;
+}
