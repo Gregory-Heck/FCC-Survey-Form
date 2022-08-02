@@ -1,28 +1,61 @@
 html{
     font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
     color: #555;
 }
 
 header{
-    margin: auto;
-    width: 50%;
-    text-align: center;
-}
-
-
-h1{
-    font-weight: bolder;
-
-    padding: 10px 0% 10px 0%;
+    padding: 0.5rem 0 1rem 0;
     margin: 0%;
+
     background-color: #CCCCCC10;
 
     border-style: solid;
     border-width: 1px;
     border-color:#000;
+
+    text-align: center;
+}
+
+
+h1{
+    margin: 0%;
+
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 
 h2{
+    margin: 1rem 0% 0% 0%;
+
+    font-size: 1.6rem;
     font-weight: lighter;
-    margin: 0%;
+    text-transform: uppercase;
+}
+
+form{
+    padding: 5rem;
+    margin: 1rem 0 1rem 0;
+
+    background-color: #EEEEEE10;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color:#444;
+
+    text-align: left;
+    font-size:  1.5rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    font-weight: lighter;
+    margin: 0.2rem 0 0.2rem 0;
+    width: 100%;
 }
