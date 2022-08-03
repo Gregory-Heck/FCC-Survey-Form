@@ -1,61 +1,80 @@
+
+
 html{
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
-    color: #555;
+    color: black;
+}
+
+body{
+    background-image: linear-gradient( 225deg, #FFFFFFDD, #DDDDDDAA), url(https://img.freepik.com/free-photo/old-newspaper-background-view_23-2149318884.jpg?w=2000);
+}
+
+.container{
+    max-width: 700px;
+    padding: 2rem 0 2rem 0;
+    margin: 5rem auto 5rem auto;
+
+    background-color: #FFFFFFDD;
+    border-radius: 5px;
 }
 
 header{
     padding: 0.5rem 0 1rem 0;
-    margin: 0%;
-
-    background-color: #CCCCCC10;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color:#000;
-
+    margin: 0% 3rem 0% 3rem;
+    background-color: #FFFFFFAA;
+    border-top: 0.3rem solid #000;
+    border-bottom: 0.3rem solid #000;
+    
     text-align: center;
 }
-
 
 h1{
     margin: 0%;
 
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bolder;
     text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
 }
 
 h2{
-    margin: 1rem 0% 0% 0%;
+    margin: 0.5rem 0% 0% 0%;
 
-    font-size: 1.6rem;
+    font-size: 2.14rem;
     font-weight: lighter;
     text-transform: uppercase;
 }
 
 form{
-    padding: 5rem;
-    margin: 1rem 0 1rem 0;
+    padding: 3rem;
+    margin: 0.6rem 1rem 0.6rem 1rem;
 
-    background-color: #EEEEEE10;
+    text-align: justify;
+}
+
+.statement{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.text-box{
+    box-sizing:border-box;
+    width: 100%;
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    margin: 1rem 0 3rem 0;
 
     border-style: solid;
+    border-color: #DDD;
+    border-radius: 0.5rem;
     border-width: 1px;
-    border-color:#444;
-
-    text-align: left;
-    font-size:  1.5rem;
 }
 
-label{
-    font-weight: bold;
+section{
+    font-size: 1.6rem;
 }
 
-input{
-    font-weight: lighter;
-    margin: 0.2rem 0 0.2rem 0;
-    width: 100%;
+#comments{
+    min-width: 100%;
+    max-width: 100%;
 }
