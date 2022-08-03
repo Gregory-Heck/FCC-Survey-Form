@@ -11,84 +11,98 @@
                 <h1 id="title">
                     Formulário de interesse
                 </h1>
-                <h2 id="description">
+                <p id="description">
                     Que tipo de <em>Newsletter</em> você gostaria de receber?
-                </h2>
+                </p>
             </header>
 
             <form id="survey-form">
-                <label id="name-label" for="name" class="statement">Nome<br></label>
-                <input id="name" type="text" class="text-box" placeholder="Digite seu nome" required>
+                <div class="form-group">
+                    <label id="name-label" for="name" class="statement">Nome<br></label>
+                    <input id="name" type="text" class="text-box" placeholder="Digite seu nome" required>    
+                </div>
                 
                 <br>
 
-                <label id="number-label" for="age" class="statement">Idade (opcional)<br></label>
-                <input id="number" type="number" class="text-box" min="1" step="1" max="150" placeholder="Digite a sua idade">
-               
-                <br>
-
-                <label id="email-label" for="email" class="statement">E-mail<br></label>
-                <input id="email" type="email" class="text-box" placeholder="Digite seu e-mail" required>
-               
-                <br>
-
-                <label id="dropdown-label" for="dropdown " class="statement">Frequência ideal<br></label>
-                <select id="dropdown" class="text-box">
-                    <option value="" disabled selected>Informe a frequêcia de recebimento da <em>Newsletter</em></option>
-                    <option value="bimestral">Uma vez a cada dois meses</option>
-                    <option value="mensal">Uma vez por mês</option>
-                    <option value="semanal">Uma vez por semana</option>
-                    <option value="bisemanal">Duas vezes por semana</option>
-                </select>
+                <div class="form-group">
+                    <label id="number-label" for="age" class="statement">Idade (opcional)<br></label>
+                    <input id="number" type="number" class="text-box" min="1" step="1" max="150" placeholder="Digite a sua idade">
+                </div>
                 
                 <br>
 
-                <label id="content-label" for="content" class="statement">Que tipo de <em>Newsletter</em> você tem interesse?<br></label>
-                <section id="content">
-                    <label for="sports">
+                <div class="form-group">
+                    <label id="email-label" for="email" class="statement">E-mail<br></label>
+                    <input id="email" type="email" class="text-box" placeholder="Digite seu e-mail" required>
+                </div>
+                        
+                <br>
+
+                <div class="form-group">
+                    <label id="dropdown-label" for="dropdown " class="statement">Frequência ideal<br></label>
+                    <select id="dropdown" class="text-box">
+                        <option value="" disabled selected>Informe a frequêcia de recebimento da <em>Newsletter</em></option>
+                        <option value="bimestral">Uma vez a cada dois meses</option>
+                        <option value="mensal">Uma vez por mês</option>
+                        <option value="semanal">Uma vez por semana</option>
+                        <option value="bisemanal">Duas vezes por semana</option>
+                    </select>
+                </div>
+                
+                <br>
+
+                <div class="form-group">
+                    <p class="statement">Que tipo de <em>Newsletter</em> você tem interesse?<br></p>
+                    
+                    <label for="sports" class="checkbox-label">
                         <input id="sports" type="checkbox" name="content" value="sports">Esportes
-                    </label><br>
+                    </label>
 
-                    <label for="esports">
+                    <label for="esports" class="checkbox-label">
                         <input id="esports" type="checkbox" name="content" value="esports">eSports
-                    </label><br>
+                    </label>
 
-                    <label for="science">
+                    <label for="science" class="checkbox-label">
                         <input id="science" type="checkbox" name="content" value="science">Ciência
-                    </label><br>
+                    </label>
 
-                    <label for="technology">
+                    <label for="technology"class="checkbox-label">
                         <input id="technology" type="checkbox" name="content" value="technology">Tecnologia
-                    </label><br>
+                    </label>
 
-                    <label for="art">
+                    <label for="art" class="checkbox-label">
                         <input id="art" type="checkbox" name="content" value="art">Arte
-                    </label><br>
+                    </label>
 
-                    <label for="news">
+                    <label for="news" class="checkbox-label">
                         <input id="news" type="checkbox" name="content" value="news">Noticias
-                    </label><br>
-                </section>
+                    </label>
+                </div>
                 
                 <br>
 
-                <label id="recomendante-label" for="recomendante" class="statement">Você recomendaria uma <em>Newsletter</em> para um amigo?<br></label>
-                <section id="recomendante">
-                    <label for="definiely">
+                <div class="form-group">
+                    <p class="statement">Você recomendaria uma <em>Newsletter</em> para um amigo?<br></p>
+                    
+                    <label for="definitely" class="radio-label">
                         <input id="definitely" type="radio" name="recomendante" value="definitely">Definitivamente
-                    </label><br>
-                    <label for="maybe">
+                    </label>
+
+                    <label for="maybe" class="radio-label">
                         <input id="maybe" type="radio" name="recomendante" value="maybe">Talvez
-                    </label><br>
-                    <label for="uncertain">
+                    </label>
+
+                    <label for="uncertain" class="radio-label">
                         <input id="uncertain" type="radio" name="recomendante" value="uncertain">Não tenho certeza
-                    </label><br>
-                </section>
+                    </label>
+                </div>
 
                 <br>
 
-                <label id="comments-label" for="comments" class="statement">Comentários e sugestões<br></label>
-                <textarea id="comments" rows="10" cols="40" class="text-box">Digite seus comentários e sugestões...</textarea>
+                <div class="form-group">
+                    <label id="comments-label" for="comments" class="statement">Comentários e sugestões<br></label>
+                    <textarea id="comments" rows="10" cols="40" class="text-box">Digite seus comentários e sugestões...</textarea>
+                </div>
                 
                 <br>
 

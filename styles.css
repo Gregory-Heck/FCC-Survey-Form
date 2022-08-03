@@ -1,7 +1,7 @@
 
 
 html{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: black;
 }
@@ -26,6 +26,7 @@ header{
     border-top: 0.3rem solid #000;
     border-bottom: 0.3rem solid #000;
     
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
@@ -37,7 +38,7 @@ h1{
     text-transform: uppercase;
 }
 
-h2{
+#description{
     margin: 0.5rem 0% 0% 0%;
 
     font-size: 2.14rem;
@@ -52,29 +53,88 @@ form{
     text-align: justify;
 }
 
+.form-group{
+    margin-top: 1rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .statement{
+    margin: 0;
+
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 2rem;
+}
+
+p.statement{
+    margin-bottom: 1.5rem;
 }
 
 .text-box{
     box-sizing:border-box;
     width: 100%;
     padding: 1rem 1.2rem 1rem 1.2rem;
-    margin: 1rem 0 3rem 0;
+    margin-top: 1rem;
 
     border-style: solid;
     border-color: #DDD;
     border-radius: 0.5rem;
     border-width: 1px;
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #777;
 }
 
-section{
+input[type=checkbox], [type=radio]{
+    margin-bottom: auto;
+    margin-top: auto;
+
+    width: 2rem;
+    height: 2rem;
+}
+
+.checkbox-label, .radio-label{
     font-size: 1.6rem;
+    font-weight: bold;
+    color: #555;
 }
 
 #comments{
     min-width: 100%;
     max-width: 100%;
+}
+
+#submit{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 3rem;
+    
+    border-style: none;
+    border-radius: 0.2rem;
+    background-color: rgb(164, 144, 250);
+
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+@media (max-width: 720px) {
+    .container{
+        max-width: 500px;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    #description{
+        font-size: 1.6rem;
+    }
 }
